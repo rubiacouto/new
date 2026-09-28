@@ -19,7 +19,7 @@ const perguntas = [
                 texto: "Isso é maravilhoso!rf",
                 afirmacao: [
                     "Quis saber como usar IA no seu ia a dia.",
-                    "Pensou que IA pode ajudar em tarefas da sua vida."
+                    "Foi atrás de vídeos, artigos e mais informaçõe sobre como utilizar essa tecnologia. que IA pode ajudar em tarefas da sua vida."
 
                 ]
             }           
@@ -31,7 +31,10 @@ const perguntas = [
         alternativas: [
             {
                 texto:"Utilizar uma ferramenta de busca na internet que utiliza IA para que ela ajude a encontrar informações relevantes para o trabalho e explique numa linguagem que facilite o entendimento",
-                afirmacao:"afirmacao"
+                afirmacao:["Consegiu ultilizar a IA para buscar informações úteis.",
+                    "Percebeu que a IA pode ajudar a encontrar informaçoes úteis na internet de foma mais rápia e direcionada.",
+                    "Pecebeu que a IA consegue explicar termos complicados de forma direcionada e iso ajudou muito suas pesquisa sobre assunto complexos."
+                ]
             },
             {
                 texto: "Escrever o trabalho com base nas conversas que teve com colegas, algumas pesquisas na internet e conhecimentos próprios sobre o tema.",
@@ -119,6 +122,10 @@ function mostraResultado(){
     caixaPerguntas.textContent = "Em 2049...";
     textoResultado.textContent = historiaFinal;
     caixaAlternativas.textContent = ""; 
+}
+
+function aleatorio(Lista){
+    const posição = M
 }
 
 mostraPergunta();
