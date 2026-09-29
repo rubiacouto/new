@@ -38,7 +38,10 @@ const perguntas = [
             },
             {
                 texto: "Escrever o trabalho com base nas conversas que teve com colegas, algumas pesquisas na internet e conhecimentos próprios sobre o tema.",
-                afirmacao:"afirmacao"
+                afirmacao:["Sentiu mai facilidade em ultilizar seus proprios recursos para escrever seu trabalho.",
+                    "Achou que era muito mais fácil procurar por respostas ultilizando alguns meios mai tradicionais mesmo que levasse mais tempo.",
+                    "Sentiu um pouco de medo de quais dados pessoais seus a IA poderia ultilizar e por io prefere fazer suas coisa com pouca promissão a tecnologia."
+                ]
             }
         ]
     },
@@ -47,11 +50,15 @@ const perguntas = [
         alternativas: [
             {
                 texto:"Me preocupo com as pessoas que perderão seus empregos para máquinas e defendem a importância de proteger os trabalhadores.",
-                afirmacao:"afirmacao"
+                afirmacao:["Sua preocupação com as pesoas motivou a criar um grupo de estudos entre trabalhadores para discutir meios de ultilização de IA de forma ética.",
+                    "Criou grupo de ética voltado para IA e busca ativamente reduzir as desigualdades geradas pela automação."
+                ]
             },
             {
                 texto:"Defende a ideia de que a IA pode criar novas oportunidades de emprego e melhorar habilidades humanas.",
-                afirmacao:"afirmacao"
+                afirmacao:["Vem inpulsionando a inovação na área de IA e luta para abrir seus caminhos profissionais com a IA.",
+                    "Participa ativamentre do desenvolvimento do desenvolvimeno d soluções criativas e na melhoria de procesos em IA."
+                ]
             }
             
         ]
