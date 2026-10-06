@@ -1,43 +1,330 @@
-:root{
-    --cor-fundo: #01080E ;
-    --cor-principal: #0B0D20 ;
-    --cor-secundaria: #212333; 
-    --cor-destaque: #2BDEFD;
-    --cor-texto: #D7F9FF;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 
+{
+margin: 0;
+padding: 0;
+box-sizing : border-box;
 }
 
 body {
-    background-color: var(--cor-fundo);
-    color: var(--cor-texto);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+min-height: 100vh;
+
+display: flex;
+justify-content: center;
+align-items: center;
+
+padding: 30px;
+
+font-family: 'Inter', sans-serif;
+
+background:
+    radial-gradient(
+        circle at top,
+        #243b67 0%,
+        #101827 45%,
+        #070b12 100%
+    );
+
+color: #ffffff;
+
+
 }
 
-.caixa-principal{
-    background-color: var(--cor-principal);
-    width: 90%;
-    max-width: 600px;
-    text-align: center;
+.caixa-principal {
+width: 100%;
+max-width: 850px;
+
+padding: 45px;
+
+background: rgba(16, 24, 39, 0.92);
+
+border: 1px solid rgba(255, 255, 255, 0.12);
+
+border-radius: 24px;
+
+box-shadow:
+    0 25px 80px rgba(0, 0, 0, 0.45);
+
+backdrop-filter: blur(10px);
+
+
+}
+
+header {
+text-align: center;
+
+margin-bottom: 35px;
+
+
+}
+
+.tag {
+display: inline-block;
+
+margin-bottom: 15px;
+
+padding: 7px 15px;
+
+border-radius: 50px;
+
+background: #2563eb;
+
+color: white;
+
+font-size: 12px;
+
+font-weight: 700;
+
+letter-spacing: 1px;
+
+
+}
+
+h1 {
+font-size: clamp(30px, 5vw, 52px);
+
+line-height: 1.1;
+
+margin-bottom: 18px;
+
+
+}
+
+.descricao {
+max-width: 650px;
+
+margin: auto;
+
+color: #aebbd0;
+
+line-height: 1.7;
+
+
+}
+
+.jogo {
+padding: 30px;
+
+background: #111c2e;
+
+border-radius: 18px;
+
+border: 1px solid #24344f;
+
+
+}
+
+.progresso {
+margin-bottom: 30px;
+}
+
+#progresso-texto {
+display: block;
+
+margin-bottom: 10px;
+
+color: #91a8c9;
+
+font-size: 14px;
+
+font-weight: 600;
+
+
+}
+
+.barra {
+width: 100%;
+
+height: 7px;
+
+overflow: hidden;
+
+border-radius: 20px;
+
+background: #263750;
+
+
+}
+
+#barra-progresso {
+width: 0%;
+
+height: 100%;
+
+border-radius: 20px;
+
+background: linear-gradient(
+    90deg,
+    #2563eb,
+    #7c3aed
+);
+
+transition: width 0.3s ease;
+
+
+}
+
+.caixa-perguntas {
+min-height: 100px;
+
+display: flex;
+align-items: center;
+
+margin-bottom: 25px;
+
+font-size: 22px;
+
+font-weight: 600;
+
+line-height: 1.5;
+
+
+}
+
+.caixa-alternativas {
+display: flex;
+
+flex-direction: column;
+
+gap: 14px;
+
+
+}
+
+.caixa-alternativas button {
+width: 100%;
+
+padding: 18px 20px;
+
+border: 1px solid #344865;
+
+border-radius: 12px;
+
+background: #17253a;
+
+color: #ffffff;
+
+text-align: left;
+
+font-family: inherit;
+
+font-size: 15px;
+
+line-height: 1.5;
+
+cursor: pointer;
+
+transition:
+    transform 0.2s,
+    background 0.2s,
+    border-color 0.2s;
+
+
+}
+
+.caixa-alternativas button:hover {
+transform: translateY(-2px);
+
+background: #203452;
+
+border-color: #3b82f6;
+
+
+}
+
+.caixa-resultado {
+display: none;
+
+margin-top: 30px;
+
+padding: 25px;
+
+border-radius: 15px;
+
+background: #17253a;
+
+border: 1px solid #344865;
+
+
+}
+
+.caixa-resultado.mostrar {
+display: block;
+}
+
+.caixa-resultado h2 {
+margin-bottom: 15px;
+
+color: #60a5fa;
+
+
+}
+
+.texto-resultado {
+color: #c5d2e5;
+
+line-height: 1.7;
+
+margin-bottom: 20px;
+
+
+}
+
+#botao-reiniciar {
+padding: 13px 20px;
+
+border: none;
+
+border-radius: 10px;
+
+background: #2563eb;
+
+color: white;
+
+font-family: inherit;
+
+font-weight: 600;
+
+cursor: pointer;
+
+transition: background 0.2s;
+
+
+}
+
+#botao-reiniciar:hover {
+background: #1d4ed8;
+}
+
+footer {
+margin-top: 25px;
+
+text-align: center;
+
+color: #657895;
+
+font-size: 12px;
+
+
+}
+
+@media (max-width: 600px) {
+
+body {
+    padding: 15px;
+}
+
+.caixa-principal {
+    padding: 25px 18px;
+}
+
+.jogo {
     padding: 20px;
 }
 
-h1{
-    color: var(--cor-destaque);
+.caixa-perguntas {
+    font-size: 18px;
 }
 
-button {
-    background-color: var(--cor-secundaria);
-    color: var(--cor-texto);
-    border: none;
-    border-radius: 15px;
-    padding: 15px;
-    transition: background-color 0.3s;
-}
 
-button:hover{
-    background-color: var(--cor-destaque);
-    color: var(--cor-principal);
 }

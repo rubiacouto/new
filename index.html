@@ -1,20 +1,61 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Você decide o futuro da IA</title>
-</head>
-<body>
-    <div class="caixa-principal">
+<!DOCTYPE html> <html lang="pt-br"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+
+<title>Você decide o futuro da IA</title>
+
+</head> <body>
+<main class="caixa-principal">
+
+    <header>
+        <span class="tag">MISSÃO IA</span>
+
         <h1>Você decide o futuro da IA</h1>
-        <div class="caixa-perguntas"></div>
-        <div class="caixa-alternativas"></div>
-        <div class="caixa-resultado">
-            <p class="texto-resultado"></p>
+
+        <p class="descricao">
+            Responda às perguntas e descubra qual futuro da
+            Inteligência Artificial você ajudaria a construir.
+        </p>
+    </header>
+
+    <section class="jogo">
+
+        <div class="progresso">
+            <span id="progresso-texto">Pergunta 1</span>
+
+            <div class="barra">
+                <div id="barra-progresso"></div>
+            </div>
         </div>
-    </div>
-    <script src="script.js"></script>
-</body>
-</html>
+
+        <div class="caixa-perguntas"></div>
+
+        <div class="caixa-alternativas"></div>
+
+        <div class="caixa-resultado">
+
+            <h2 id="titulo-resultado">
+                Seu futuro com a IA
+            </h2>
+
+            <p class="texto-resultado"></p>
+
+            <button id="botao-reiniciar">
+                Jogar novamente
+            </button>
+
+        </div>
+
+    </section>
+
+    <footer>
+        <p>
+            Projeto educacional desenvolvido com HTML,
+            CSS e JavaScript.
+        </p>
+    </footer>
+
+</main>
+
+<script type="module" src="js/script.js"></script>
+
+</body> </html>
